@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,12 +26,12 @@ public class EyeTrackingController : MonoBehaviour
 
         Debug.Log(eyeGaze.TrackingMode);
         
-        //¶–Ú‚ÌˆÊ’u‚©‚ç”­ËI
+        //å·¦ç›®ã®ä½ç½®ã‹ã‚‰ç™ºå°„ï¼
         lineObj.transform.position = leftEyeObj.transform.position;
 
         if (eyeGaze.EyeTrackingEnabled)
         {
-            //¶–Ú‚Ì‰ñ“]‚É‹ü‚ÌŠp“x
+            //å·¦ç›®ã®å›è»¢ã«è¦–ç·šã®è§’åº¦
             lineObj.transform.rotation = leftEyeObj.transform.rotation * eyeGaze.transform.rotation;
             
 
@@ -43,7 +43,7 @@ public class EyeTrackingController : MonoBehaviour
             if (Physics.Raycast(leftRay, out hit)) 
             {
                 string name = hit.collider.gameObject.name;
-                Debug.Log(name); // ƒRƒ“ƒ\[ƒ‹‚É•\¦
+                Debug.Log(name); // ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã«è¡¨ç¤º
 
                 hit.collider.gameObject.GetComponent<Renderer>().material = ColorSet[1];
             }
