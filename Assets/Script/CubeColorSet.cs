@@ -5,8 +5,12 @@ using UnityEngine;
 public class CubeColorSet : MonoBehaviour
 {
 
-    public Material setColor;
-    // Start is called before the first frame update
+    public Material defoColor;
+    public Material hitColor;
+
+    [System.NonSerialized]
+    public bool IsHit = false;
+
     void Start()
     {
         
@@ -15,6 +19,15 @@ public class CubeColorSet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<Renderer>().material = setColor;
+        this.GetComponent<Renderer>().material = defoColor;
+
+
+        if (IsHit)
+        {
+            IsHit = false;
+            this.GetComponent<Renderer>().material = hitColor;
+        }
+
+
     }
 }

@@ -170,9 +170,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineObj: {fileID: 1891826748}
   leftEyeObj: {fileID: 321231205}
-  ColorSet:
-  - {fileID: 2100000, guid: 5f2761856e8e72844974b647bfef1b98, type: 2}
-  - {fileID: 2100000, guid: ddd7ef9a16daca742835e0349d362fc5, type: 2}
 --- !u!114 &308675770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +605,7 @@ GameObject:
   - component: {fileID: 1483117912}
   - component: {fileID: 1483117916}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube(C)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -704,7 +701,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82165b35b6d981d48bb476483c80213b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setColor: {fileID: 2100000, guid: 5f2761856e8e72844974b647bfef1b98, type: 2}
+  defoColor: {fileID: 2100000, guid: 5f2761856e8e72844974b647bfef1b98, type: 2}
+  hitColor: {fileID: 2100000, guid: ddd7ef9a16daca742835e0349d362fc5, type: 2}
 --- !u!4 &1497597334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4779998117587278, guid: e201a24a09e942042b93390d0444d728, type: 3}
@@ -820,7 +818,7 @@ GameObject:
   - component: {fileID: 1879358596}
   - component: {fileID: 1879358600}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Cube(R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,7 +914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82165b35b6d981d48bb476483c80213b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setColor: {fileID: 2100000, guid: 5f2761856e8e72844974b647bfef1b98, type: 2}
+  defoColor: {fileID: 2100000, guid: 5f2761856e8e72844974b647bfef1b98, type: 2}
+  hitColor: {fileID: 2100000, guid: ddd7ef9a16daca742835e0349d362fc5, type: 2}
 --- !u!1 &1891826748
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,7 +926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1891826751}
   m_Layer: 0
-  m_Name: LineObject
+  m_Name: Gaze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1060,7 +1059,7 @@ GameObject:
   - component: {fileID: 2063870216}
   - component: {fileID: 2063870220}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Cube(L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1156,4 +1155,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82165b35b6d981d48bb476483c80213b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setColor: {fileID: 2100000, guid: 5f2761856e8e72844974b647bfef1b98, type: 2}
+  defoColor: {fileID: 2100000, guid: 5f2761856e8e72844974b647bfef1b98, type: 2}
+  hitColor: {fileID: 2100000, guid: ddd7ef9a16daca742835e0349d362fc5, type: 2}
